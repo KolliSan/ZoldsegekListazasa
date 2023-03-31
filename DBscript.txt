@@ -1,0 +1,30 @@
+create database zoldsegek_db;
+
+use zoldsegek_db;
+
+create table novenyek(
+nev varchar(50) not null primary key,
+palantazas varchar(50),
+kiultetes varchar(50) not null,
+kompatibilis varchar(400),
+nemkompatibilis varchar(400));
+
+insert into novenyek values ('paradicsom','2.-3.-4.','4.-5.','bazsalikom, hagyma, spárga, sárgarépa, petrezselyem, uborka, fokhagyma, petrezselyem, sárgarépa, zeller, metélőhagyma','édeskömény, brokkoli, káposzta, kukorica, burgonya, padlizsán, paprika, kapor');
+insert into novenyek values ('sárgarépa','1.-2.','3.-4.-5.-6.-7.','bab, metélőhagyma, póréhagyma, saláta, hagyma, rozmaring, paradicsom, zsálya','kapor, paszternák, burgonya');
+insert into novenyek values ('fokhagyma',null,'3.-4.','cékla, zeller, saláta, burgonya eper, paradicsom','borsó, bab');
+insert into novenyek values ('saláta','10.-11.-12.','1.-2.','répa, sárgarépa, uborka, kapor, fokhagyma, hagyma, retek, spenót, tök, eper',null);
+insert into novenyek values ('hagyma','2.-3.','3.-4.-5','cékla, sárgarépa, eper, paradicsom, saláta','borsó és bab');
+insert into novenyek values ('krumpli',null,'3.-4.','bab, brassicas, kukorica','paradicsom, tök, uborka');
+insert into novenyek values ('brokkoli','3.','4.-5.-6.','bab, répa, hagyma, burgonya, oregano','eper, paradicsom, paprika, tök');
+insert into novenyek values ('karfiol','3.-4.','5.-6.','bab, répa, hagyma, burgonya, oregano','eper, paradicsom, paprika, tök');
+insert into novenyek values ('kelkáposzta','3.-4.-5','5.-6.','bab, répa, hagyma, burgonya, oregano','eper, paradicsom, paprika, tök');
+insert into novenyek values ('káposzta',null,'2.-3.-4.-5.-6.-7.-8.','bab, répa, hagyma, burgonya, oregano','eper, paradicsom, paprika, tök');
+insert into novenyek values ('zöldbab','4.-5','6.-7.','répa, sárgarépa, kukorica, uborka, borsó, burgonya, eper','metélőhagyma, póréhagyma, hagyma, fokhagyma');
+insert into novenyek values ('retek','1.-2.-3.-','4.-5.-6.-7.-8.-9.','bab, uborka, saláta, borsó, tök, spenót, sárgarépa','burgonya');
+insert into novenyek values ('paprika','1.-2.-3.','3.-4.','padlizsán, hagyma, paradicsom, sárgarépa, fokhagyma, bokorbab, oregánó, majoránna, bazsalikom, rézvirág, büdöske, muskátli','karalábé, édeskömény, diófa');
+insert into novenyek values ('uborka','3.-4.','5.-6.','káposztafélék, cékla, napraforgó, zeller, bokorbab, saláta, kukorica, hagyma, sárgarépa, borsó, brokkoli, karfiol, leveles kel, futóbab, fokhagyma, metélőhagyma, csemegekukorica, káposzta, kapor, bazsalikom, koriander, borsikafű (csombor), édeskömény, kömény, rozmaring, büdöske, sarkantyúvirág, petúnia','paradicsom, burgonya, dinnye, retek, zsálya, izsóp');
+insert into novenyek values ('cukkini','4.-5.','6.','kukorica, cékla, karósbab, hagyma, borsó, futóbab, bokorbab, káposztafélék, csemegekukorica, borágó, sarkantyúka, petúnia','paradicsom');
+insert into novenyek values ('tök','4.-5.','6.','bokorbab, saláta, hagyma, borsó, csemegekukorica, kukorica, napraforgó, dinnye, retek, káposztafélék, menta, borágó, rozmaring, sarkantyúvirág, petúnia','burgonya');
+insert into novenyek values ('karalábé','2.-3.','4.-5.','bokorbab, borsó, burgonya, retek, cékla, fejes saláta, zeller, spenót, póréhagyma, borágó, bazsalikom, rozmaring','paprika, paradicsom, hagyma, futóbab, édes kömény');
+insert into novenyek values ('cékla','3.-4.-5.-6.','7.','bokorbab, kapor, uborka, fokhagyma, káposztafélék, zeller, karalábé, tépősaláta, cukkíni, hagyma, karfiol, káposzta, saláta, kelbimbó, kömény, koriander, zsálya','burgonya, spárga, futóbab, póréhagyma, kukorica, spenót, paradicsom, sárgarépa');
+insert into novenyek values ('kukorica','4.-5.','5.-6.','bokorbab, uborka, burgonya, sütőtök dinnye, paradicsom, cukkíni, patiszon, napraforgó, borsó, futóbab, spenót, tök, kapor, muskátli, facélia','cékla, zeller, saláta, sárgarépa, menta, rozmaring');
