@@ -1,0 +1,20 @@
+zöldség_neve;zöldség_palántázási_hónapja;zöldség_kiültetési_hónapja;zöldség_kompatibilis_vele;zöldség_nem_kompatibilis_vele;
+paradicsom;2.-3.-4.;4.-5.;bazsalikom, hagyma, spárga, sárgarépa, petrezselyem, uborka, fokhagyma, petrezselyem, sárgarépa, zeller, metélőhagyma;édeskömény, brokkoli, káposzta, kukorica, burgonya, padlizsán, paprika, kapor
+sárgarépa;1.-2.;3.-4.-5.-6.-7.; bab, metélőhagyma, póréhagyma, saláta, hagyma, rozmaring, paradicsom, zsálya;kapor, paszternák, burgonya
+fokhagyma;nincs;3.-4.;cékla, zeller, saláta, burgonya eper, paradicsom;borsó, bab
+saláta;10.-11.-12.-1.-2.;répa, sárgarépa, uborka, kapor, fokhagyma, hagyma, retek, spenót, tök, eper;nincs
+hagyma;2.-3.;3.-4.-5.;cékla, sárgarépa, eper, paradicsom, saláta;borsó és bab
+krumpli;nincs;3.-4.;bab, brassicas, kukorica;paradicsom, tök, uborka
+brokkoli;3.;4.-5.-6.;bab, répa, hagyma, burgonya, oregano;eper, paradicsom, paprika, tök
+karfiol;3.-4.;5.-6.;bab, répa, hagyma, burgonya, oregano;eper, paradicsom, paprika, tök
+kelkáposzta;3.-4.-5.;5.-6.;bab, répa, hagyma, burgonya, oregano;eper, paradicsom, paprika, tök
+káposzta;nincs;2.-3.-4.-5.-6.-7.-8.;bab, répa, hagyma, burgonya, oregano;eper, paradicsom, paprika, tök
+zöldbab;4.-5.;6.-7.;répa, sárgarépa, kukorica, uborka, borsó, burgonya, eper;metélőhagyma, póréhagyma, hagyma, fokhagyma
+retek;1.-2.-3.-;4.-5.-6.-7.-8.-9.;bab, uborka, saláta, borsó, tök, spenót, sárgarépa;burgonya
+paprika;1.-2.-3.;padlizsán, hagyma, paradicsom, sárgarépa, fokhagyma, bokorbab, oregánó, majoránna, bazsalikom, rézvirág, büdöske, muskátli;karalábé, édeskömény, diófa
+uborka;3.-4.;5.-6.;káposztafélék, cékla, napraforgó, zeller, bokorbab, saláta, kukorica, hagyma, sárgarépa, borsó, brokkoli, karfiol, leveles kel, futóbab, fokhagyma, metélőhagyma, csemegekukorica, káposzta, kapor, bazsalikom, koriander, borsikafű (csombor), édeskömény, kömény, rozmaring, büdöske, sarkantyúvirág, petúnia; paradicsom, burgonya, dinnye, retek, zsálya, izsóp
+cukkini;4.-5.;6.;kukorica, cékla, karósbab, hagyma, borsó, futóbab, bokorbab, káposztafélék, csemegekukorica, borágó, sarkantyúka, petúnia;paradicsom
+tök;4.-5.;6.;bokorbab, saláta, hagyma, borsó, csemegekukorica, kukorica, napraforgó, dinnye, retek, káposztafélék, menta, borágó, rozmaring, sarkantyúvirág, petúnia;burgonya
+karalábé;2.-3.;4.-5.;bokorbab, borsó, burgonya, retek, cékla, fejes saláta, zeller, spenót, póréhagyma, borágó, bazsalikom, rozmaring;paprika, paradicsom, hagyma, futóbab, édes kömény
+cékla;3.-4.-5.-6.;7.;bokorbab, kapor, uborka, fokhagyma, káposztafélék, zeller, karalábé, tépősaláta, cukkíni, hagyma, karfiol, káposzta, saláta, kelbimbó, kömény, koriander, zsálya;burgonya, spárga, futóbab, póréhagyma, kukorica, spenót, paradicsom, sárgarépa
+kukorica;4.-5.;5.-6.;bokorbab, uborka, burgonya, sütőtök dinnye, paradicsom, cukkíni, patiszon, napraforgó, borsó, futóbab, spenót, tök, kapor, muskátli, facélia;cékla, zeller, saláta, sárgarépa, menta, rozmaring
