@@ -92,15 +92,7 @@ public class NovenyFoprogram {
 					}
 				}
 
-				/*
-				 * if (e.getClickCount() == 1) {
-				 * 
-				 * txtId.setText(kivalasztottOra.getId().toString());
-				 * txtMegnevezes.setText(kivalasztottOra.getMegnevezes());
-				 * cmbTipus.setSelectedItem(kivalasztottOra.getTipus());
-				 * SpinnerAr.setValue(kivalasztottOra.getAr());
-				 * checkboxVizallo.setSelected(kivalasztottOra.isVizallo()); }
-				 */
+			
 			}
 		});
 		lstAdatmegjelenites.setFont(new Font("Arial", Font.PLAIN, 15));
@@ -161,9 +153,8 @@ public class NovenyFoprogram {
 	}
 
 	private void modositas() throws SQLException {
-		// !!!! A combobox mindig egy object, amit kasztolni kell abba a tipusba, amire
-		// szuksegunk van
-
+		
+	
 		if (lstAdatmegjelenites.getSelectedIndex() != -1) {
 
 			Noveny modositandoNoveny = (Noveny) lstAdatmegjelenites.getSelectedValue();
@@ -172,10 +163,12 @@ public class NovenyFoprogram {
 					novenyek.get(3).getKiultet(), novenyek.get(4).getKompatibilis(), novenyek.get(5).getEllentet());
 			modositottNoveny.setNev(modositandoNoveny.getNev());
 
+			ZoldsegFajlkezeles.novenyModositasa(modositottNoveny);
+			
 			novenyek.set(novenyek.indexOf(modositandoNoveny), modositottNoveny);
 			listModel.set(modNovenyIndex, modositottNoveny);
 
-			ZoldsegFajlkezeles.novenyModositasa(modositottNoveny);
+			
 		}
 
 		else {

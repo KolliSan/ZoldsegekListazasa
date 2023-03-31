@@ -69,8 +69,7 @@ public class ZoldsegFajlkezeles {
 
 		try {
 			sqlUtasitas = kapcsolat.prepareStatement(
-					"INSERT INTO novenyek (nev,palantazas,kiultetes,kompatibilis,nemkompatibilis) VALUES (?,?,?,?,?)",
-					Statement.RETURN_GENERATED_KEYS);
+					"INSERT INTO novenyek (nev,palantazas,kiultetes,kompatibilis,nemkompatibilis) VALUES (?,?,?,?,?)");
 			sqlUtasitas.setString(1, ujNoveny.getNev());
 			sqlUtasitas.setString(2, ujNoveny.getPalanta());
 			sqlUtasitas.setString(3, ujNoveny.getKiultet());
@@ -80,19 +79,7 @@ public class ZoldsegFajlkezeles {
 			sqlUtasitas.executeUpdate();
 
 			ResultSet res = sqlUtasitas.getGeneratedKeys();
-			if (res.next()) {
-				ujNoveny.setNev(res.getString(1));
-			}
-
-			sqlUtasitas.clearParameters();
-
-			/*
-			 * sqlUtasitas =
-			 * sqlKapcsolat.prepareStatement("SELECT * FROM oranyilvantartas WHERE ID=?");
-			 * sqlUtasitas.setInt(1, ujOra.getId());
-			 * 
-			 * sqlUtasitas.executeUpdate();
-			 */
+			
 
 		} catch (Exception e) {
 
@@ -127,20 +114,15 @@ public class ZoldsegFajlkezeles {
 
 		try {
 			sqlUtasitas = kapcsolat.prepareStatement(
-					"UPDATE novenyek SET nev = ?, palantazas = ?, kiultetes = ?, kompatibilis = ?, nemkompatibilis = ? WHERE nev = ?");
-			sqlUtasitas.setString(1, modositNoveny.getNev());
-			sqlUtasitas.setString(2, modositNoveny.getPalanta());
-			sqlUtasitas.setString(3, modositNoveny.getKiultet());
-			sqlUtasitas.setString(4, modositNoveny.getKompatibilis());
-			sqlUtasitas.setString(5, modositNoveny.getEllentet());
+					"UPDATE novenyek SET palantazas = ?, kiultetes = ?, kompatibilis = ?, nemkompatibilis = ? WHERE nev = ?");
 			
+			sqlUtasitas.setString(1, modositNoveny.getPalanta());
+			sqlUtasitas.setString(2, modositNoveny.getKiultet());
+			sqlUtasitas.setString(3, modositNoveny.getKompatibilis());
+			sqlUtasitas.setString(4, modositNoveny.getEllentet());
+			sqlUtasitas.setString(5, modositNoveny.getNev());
 			
-			/*
-			 * sqlUtasitas.setString(1, ujOra.getMegnevezes()); sqlUtasitas.setString(2,
-			 * String.valueOf(ujOra.getTipus())); sqlUtasitas.setInt(3, ujOra.getAr());
-			 * sqlUtasitas.setBoolean(4, ujOra.isVizallo());
-			 */
-
+	
 			sqlUtasitas.executeUpdate();
 			sqlUtasitas.clearParameters();
 
@@ -155,7 +137,6 @@ public class ZoldsegFajlkezeles {
 
 		try {
 			sqlUtasitas = kapcsolat.prepareStatement("DELETE FROM novenyek WHERE nev=?");
-			sqlUtasitas.setString(1, torlendoNoveny.getNev());
 
 			sqlUtasitas.executeUpdate();
 			sqlUtasitas.clearParameters();
