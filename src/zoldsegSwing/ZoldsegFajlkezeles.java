@@ -77,8 +77,6 @@ public class ZoldsegFajlkezeles {
 			sqlUtasitas.setString(5, ujNoveny.getEllentet());
 
 			sqlUtasitas.executeUpdate();
-
-			ResultSet res = sqlUtasitas.getGeneratedKeys();
 			
 
 		} catch (Exception e) {
@@ -137,6 +135,7 @@ public class ZoldsegFajlkezeles {
 
 		try {
 			sqlUtasitas = kapcsolat.prepareStatement("DELETE FROM novenyek WHERE nev=?");
+			sqlUtasitas.setString(1, torlendoNoveny.getNev());
 
 			sqlUtasitas.executeUpdate();
 			sqlUtasitas.clearParameters();

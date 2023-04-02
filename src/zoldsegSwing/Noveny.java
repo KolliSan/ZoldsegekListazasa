@@ -71,7 +71,7 @@ public class Noveny {
 
 	@Override
 	public String toString() {
-		return "Növény neve: " + nev;
+		return nev;
 				
 				/*+ ", palántázás hónapja(i): " + palanta + ", kiültetés hónapja(i): " 
 	+ kiultet + ", ezekkel a növényekkel kompatibilis: " + kompatibilis
