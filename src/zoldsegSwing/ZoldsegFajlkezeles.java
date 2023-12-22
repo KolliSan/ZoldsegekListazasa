@@ -23,7 +23,7 @@ public class ZoldsegFajlkezeles {
 
 			String connectionURL = "jdbc:mysql://localhost:3306/zoldsegek_db?&useSSL=false";
 
-			kapcsolat = (Connection) DriverManager.getConnection(connectionURL, "root", "kólasprite");
+			kapcsolat = (Connection) DriverManager.getConnection(connectionURL, "root", "XXX");
 
 		} catch (Exception e) {
 
